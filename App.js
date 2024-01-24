@@ -1,20 +1,377 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StatusBar } from "expo-status-bar";
+import {
+  Button,
+  Image,
+  Pressable,
+  ScrollView,
+  StyleSheet,
+  Text,
+  View,
+} from "react-native";
+import Ionicons from "@expo/vector-icons/Ionicons";
+import { MaterialCommunityIcons } from "@expo/vector-icons";
+import { MaterialIcons } from "@expo/vector-icons";
+import { AntDesign } from "@expo/vector-icons";
+import { Octicons } from "@expo/vector-icons";
+import notifications from "./screens/notifications";
+import { LinearGradient } from "expo-linear-gradient";
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <LinearGradient
+      style={styles.container}
+      colors={["#040D12", "#183D3D", "#5C8374", "#04364A"]}
+    >
+      <StatusBar style="light" />
+      <View style={styles.navbar}>
+        <Ionicons
+          name="notifications-outline"
+          size={27}
+          style={styles.icon}
+          color="white"
+          onPress={() => console.log("sup")}
+        />
+
+        <MaterialCommunityIcons
+          style={styles.logo}
+          name="facebook-workplace"
+          size={27}
+          color="#fff"
+        />
+        <MaterialCommunityIcons name="cookie-outline" size={27} color="white" />
+        <Ionicons name="search-sharp" size={27} color="white" />
+      </View>
+
+      <View style={styles.scroll}>
+        <Text style={styles.Texts}>Cryptocurrency</Text>
+        <Text style={styles.Text}>NFT</Text>
+        <Text style={styles.Text}>Categories</Text>
+        <Text style={styles.Text}>Exchanges</Text>
+      </View>
+
+      <View style={styles.Databody}>
+        <View style={styles.Data}>
+          <Text style={styles.Text}>GLOBAL MARKET CAP</Text>
+          <Text style={styles.Text}>
+            $1,713,020,289,116{" "}
+            <Text style={styles.Text}>
+              {" "}
+              <AntDesign name="caretdown" size={13} color="red" /> 5.1%
+            </Text>
+          </Text>
+        </View>
+
+        <View style={styles.Data}>
+          <View>
+            <Text style={styles.Text}>GLOBAL MARKET CAP</Text>
+            <Text style={styles.Text}>
+              $1,713,020,289,116{" "}
+              <Text style={styles.Text}>
+                {" "}
+                <AntDesign name="caretdown" size={13} color="red" /> 5.1%
+              </Text>
+            </Text>
+          </View>
+        </View>
+      </View>
+
+      <View style={styles.display}>
+        <View style={styles.displaycont}>
+          <Text style={styles.Text}>USD / BTC</Text>
+        </View>
+
+        <View style={styles.displaycont}>
+          <Text style={styles.Text}>All Coins</Text>
+        </View>
+
+        <View style={styles.displaycont}>
+          <Text style={styles.Text}>24H</Text>
+        </View>
+
+        <View style={styles.displaycont}>
+          <Text style={styles.Text}>MARKET CAP</Text>
+        </View>
+      </View>
+
+      <ScrollView>
+        <View style={styles.table}>
+          <Text style={styles.Text}>#</Text>
+          <Text style={styles.Text}>COIN</Text>
+          <Text style={styles.Text}>PRICE</Text>
+          <Text style={styles.Text}>24H</Text>
+          <Text style={styles.Text}>MARKET CAP</Text>
+        </View>
+
+        <View style={styles.table}>
+          <Text style={styles.Text}>1</Text>
+          <Text style={styles.Text}>
+            <MaterialCommunityIcons
+              name="currency-btc"
+              size={24}
+              color="black"
+            />{" "}
+            BTC
+          </Text>
+          <Text style={styles.Text}>$23,456</Text>
+          <Text style={styles.Text}>4.7%</Text>
+          <Text style={styles.Text}>$990,909,099</Text>
+        </View>
+
+        <View style={styles.table}>
+          <Text style={styles.Text}>2</Text>
+          <Text style={styles.Text}>
+            <MaterialCommunityIcons
+              name="currency-btc"
+              size={24}
+              color="black"
+            />{" "}
+            BTC
+          </Text>
+          <Text style={styles.Text}>$23,456</Text>
+          <Text style={styles.Text}>4.7%</Text>
+          <Text style={styles.Text}>$990,909,099</Text>
+        </View>
+
+        <View style={styles.table}>
+          <Text style={styles.Text}>3</Text>
+          <Text style={styles.Text}>
+            <MaterialCommunityIcons
+              name="currency-btc"
+              size={24}
+              color="black"
+            />{" "}
+            BTC
+          </Text>
+          <Text style={styles.Text}>$23,456</Text>
+          <Text style={styles.Text}>4.7%</Text>
+          <Text style={styles.Text}>$990,909,099</Text>
+        </View>
+
+        <View style={styles.table}>
+          <Text style={styles.Text}>4</Text>
+          <Text style={styles.Text}>
+            <MaterialCommunityIcons
+              name="currency-btc"
+              size={24}
+              color="black"
+            />{" "}
+            BTC
+          </Text>
+          <Text style={styles.Text}>$23,456</Text>
+          <Text style={styles.Text}>4.7%</Text>
+          <Text style={styles.Text}>$990,909,099</Text>
+        </View>
+
+        <View style={styles.table}>
+          <Text style={styles.Text}>5</Text>
+          <Text style={styles.Text}>
+            <MaterialCommunityIcons
+              name="currency-btc"
+              size={24}
+              color="black"
+            />{" "}
+            BTC
+          </Text>
+          <Text style={styles.Text}>$23,456</Text>
+          <Text style={styles.Text}>4.7%</Text>
+          <Text style={styles.Text}>$990,909,099</Text>
+        </View>
+
+        <View style={styles.table}>
+          <Text style={styles.Text}>6</Text>
+          <Text style={styles.Text}>
+            <MaterialCommunityIcons
+              name="currency-btc"
+              size={24}
+              color="black"
+            />{" "}
+            BTC
+          </Text>
+          <Text style={styles.Text}>$23,456</Text>
+          <Text style={styles.Text}>4.7%</Text>
+          <Text style={styles.Text}>$990,909,099</Text>
+        </View>
+
+        <View style={styles.table}>
+          <Text style={styles.Text}>7</Text>
+          <Text style={styles.Text}>
+            <MaterialCommunityIcons
+              name="currency-btc"
+              size={24}
+              color="black"
+            />{" "}
+            BTC
+          </Text>
+          <Text style={styles.Text}>$23,456</Text>
+          <Text style={styles.Text}>4.7%</Text>
+          <Text style={styles.Text}>$990,909,099</Text>
+        </View>
+
+        <View style={styles.table}>
+          <Text style={styles.Text}>8</Text>
+          <Text style={styles.Text}>
+            <MaterialCommunityIcons
+              name="currency-btc"
+              size={24}
+              color="black"
+            />{" "}
+            BTC
+          </Text>
+          <Text style={styles.Text}>$23,456</Text>
+          <Text style={styles.Text}>4.7%</Text>
+          <Text style={styles.Text}>$990,909,099</Text>
+        </View>
+
+        <View style={styles.table}>
+          <Text style={styles.Text}>9</Text>
+          <Text style={styles.Text}>
+            <MaterialCommunityIcons
+              name="currency-btc"
+              size={24}
+              color="black"
+            />{" "}
+            BTC
+          </Text>
+          <Text style={styles.Text}>$23,456</Text>
+          <Text style={styles.Text}>4.7%</Text>
+          <Text style={styles.Text}>$990,909,099</Text>
+        </View>
+      </ScrollView>
+
+      <View style={styles.ads}>
+        <Image
+          source={require("./assets/superApp.png")}
+          style={{ width: 350, height: 50, marginHorizontal: 30 }}
+        />
+      </View>
+
+      <View style={styles.footer}>
+        <View style={styles.align}>
+          <Octicons name="graph" size={20} color="#fff" />
+          <Text style={styles.Text}>Market</Text>
+        </View>
+
+        <View style={styles.align}>
+          <Ionicons name="star-outline" size={20} color="#fff" />
+          <Text style={styles.Text}>Portfolio</Text>
+        </View>
+
+        <View style={styles.align}>
+          <Ionicons name="search-outline" size={20} color="#fff" />
+          <Text style={styles.Text}>Search</Text>
+        </View>
+
+        <View style={styles.align}>
+          <MaterialIcons name="explore" size={20} color="#fff" />
+          <Text style={styles.Text}>Explore</Text>
+        </View>
+
+        <View style={styles.align}>
+          <MaterialIcons name="more-horiz" size={20} color="#fff" />
+          <Text style={styles.Text}>More</Text>
+        </View>
+      </View>
+    </LinearGradient>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+    // backgroundColor: "#2f3e46",
+    // alignItems: "center",
+    // justifyContent: "center",
+  },
+  navbar: {
+    // backgroundColor: "#888",
+    flexDirection: "row",
+    marginTop: 20,
+    width: "100%",
+    justifyContent: "space-between",
+    padding: 10,
+  },
+  icon: {
+    // backgroundColor: "",
+  },
+  logo: {
+    width: 200,
+    // backgroundColor: "black",
+    marginLeft: 30,
+    textAlign: "center",
+  },
+  scroll: {
+    flexDirection: "row",
+    width: "100%",
+    padding: 10,
+    justifyContent: "space-between",
+    // backgroundColor: "black",
+    borderBottomColor: "#F4EEEE",
+    borderBottomWidth: 1,
+  },
+  Text: {
+    color: "#FFF5E0",
+    fontSize: 12,
+  },
+  Texts: {
+    color: "#5C8374",
+    fontWeight: "bold",
+    borderBottomWidth: 4,
+    paddingBottom: 5,
+    borderBottomColor: "#96C291",
+    borderBottomRightRadius: 10,
+  },
+  Data: {
+    // backgroundColor: "#345830",
+    borderLeftWidth: 10,
+    borderLeftColor: "red",
+    paddingVertical: 10,
+    padding: 10,
+    marginLeft: 10,
+    borderRadius: 10,
+  },
+  Databody: {
+    // backgroundColor: "#333",
+    marginRight: 10,
+    flexDirection: "row",
+    width: "100%",
+    paddingHorizontal: 10,
+    padding: 10,
+    justifyContent: "space-between",
+  },
+  display: {
+    flexDirection: "row",
+    width: "100%",
+    justifyContent: "space-between",
+    padding: 10,
+  },
+  displaycont: {
+    // color: "white",
+    backgroundColor: "#93B1A6",
+    borderRadius: 15,
+    padding: 5,
+    paddingHorizontal: 10,
+  },
+  footer: {
+    backgroundColor: "#183D3D",
+    flexDirection: "row",
+    width: "100%",
+    justifyContent: "space-between",
+    height: "10%",
+    borderTopLeftRadius: 20,
+    borderTopEndRadius: 20,
+    alignItems: "center",
+    paddingHorizontal: 20,
+  },
+  table: {
+    flexDirection: "row",
+    width: "100%",
+    justifyContent: "space-between",
+    paddingHorizontal: 20,
+    borderBottomColor: "#333d29",
+    borderWidth: 1,
+    padding: 15,
+  },
+  align: {
+    alignItems: "center",
   },
 });
