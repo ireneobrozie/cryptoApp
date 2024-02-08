@@ -44,7 +44,6 @@ export default function App() {
 
       <View style={styles.scroll}>
         <Text style={styles.Texts}>Cryptocurrency</Text>
-        <Text style={styles.Text}>NFT</Text>
         <Text style={styles.Text}>Categories</Text>
         <Text style={styles.Text}>Exchanges</Text>
       </View>
@@ -81,7 +80,7 @@ export default function App() {
         </View>
 
         <View style={styles.displaycont}>
-          <Text style={styles.Text}>All Coins</Text>
+          <Text style={styles.Text}>All FINTECHS</Text>
         </View>
 
         <View style={styles.displaycont}>
@@ -96,7 +95,7 @@ export default function App() {
       <ScrollView>
         <View style={styles.table}>
           <Text style={styles.Text}>#</Text>
-          <Text style={styles.Text}>COIN</Text>
+          <Text style={styles.Text}>FINTECHS</Text>
           <Text style={styles.Text}>PRICE</Text>
           <Text style={styles.Text}>24H</Text>
           <Text style={styles.Text}>MARKET CAP</Text>
@@ -105,145 +104,153 @@ export default function App() {
         <View style={styles.table}>
           <Text style={styles.Text}>1</Text>
           <Text style={styles.Text}>
-            <MaterialCommunityIcons
+            {/* <MaterialCommunityIcons
               name="currency-btc"
               size={24}
               color="black"
-            />{" "}
-            BTC
+            /> */}
+            OPAY
           </Text>
           <Text style={styles.Text}>$23,456</Text>
           <Text style={styles.Text}>4.7%</Text>
-          <Text style={styles.Text}>$990,909,099</Text>
+          <Text style={styles.Text}>$990</Text>
         </View>
 
         <View style={styles.table}>
           <Text style={styles.Text}>2</Text>
           <Text style={styles.Text}>
-            <MaterialCommunityIcons
+            {/* <MaterialCommunityIcons
               name="currency-btc"
               size={24}
               color="black"
-            />{" "}
-            BTC
+            />{" "} */}
+            CHIPPER
           </Text>
           <Text style={styles.Text}>$23,456</Text>
           <Text style={styles.Text}>4.7%</Text>
-          <Text style={styles.Text}>$990,909,099</Text>
+          <Text style={styles.Text}>$990</Text>
         </View>
 
         <View style={styles.table}>
           <Text style={styles.Text}>3</Text>
           <Text style={styles.Text}>
-            <MaterialCommunityIcons
+            {/* <MaterialCommunityIcons
               name="currency-btc"
               size={24}
               color="black"
-            />{" "}
-            BTC
+            />{" "} */}
+            SWITCH
           </Text>
           <Text style={styles.Text}>$23,456</Text>
           <Text style={styles.Text}>4.7%</Text>
-          <Text style={styles.Text}>$990,909,099</Text>
+          <Text style={styles.Text}>$990</Text>
         </View>
 
         <View style={styles.table}>
           <Text style={styles.Text}>4</Text>
           <Text style={styles.Text}>
-            <MaterialCommunityIcons
+            {/* <MaterialCommunityIcons
               name="currency-btc"
               size={24}
               color="black"
-            />{" "}
-            BTC
+            />{" "} */}
+            PAYSTACK
           </Text>
           <Text style={styles.Text}>$23,456</Text>
           <Text style={styles.Text}>4.7%</Text>
-          <Text style={styles.Text}>$990,909,099</Text>
+          <Text style={styles.Text}>$990</Text>
         </View>
 
         <View style={styles.table}>
           <Text style={styles.Text}>5</Text>
           <Text style={styles.Text}>
-            <MaterialCommunityIcons
+            {/* <MaterialCommunityIcons
               name="currency-btc"
               size={24}
               color="black"
-            />{" "}
-            BTC
+            />{" "} */}
+            KUDA
           </Text>
           <Text style={styles.Text}>$23,456</Text>
           <Text style={styles.Text}>4.7%</Text>
-          <Text style={styles.Text}>$990,909,099</Text>
+          <Text style={styles.Text}>$990</Text>
         </View>
 
         <View style={styles.table}>
           <Text style={styles.Text}>6</Text>
           <Text style={styles.Text}>
-            <MaterialCommunityIcons
+            {/* <MaterialCommunityIcons
               name="currency-btc"
               size={24}
               color="black"
-            />{" "}
-            BTC
+            />{" "} */}
+            PAGA
           </Text>
           <Text style={styles.Text}>$23,456</Text>
           <Text style={styles.Text}>4.7%</Text>
-          <Text style={styles.Text}>$990,909,099</Text>
+          <Text style={styles.Text}>$990</Text>
         </View>
 
         <View style={styles.table}>
           <Text style={styles.Text}>7</Text>
           <Text style={styles.Text}>
-            <MaterialCommunityIcons
+            {/* <MaterialCommunityIcons
               name="currency-btc"
               size={24}
               color="black"
-            />{" "}
-            BTC
+            />{" "} */}
+            PIGGYVEST
           </Text>
           <Text style={styles.Text}>$23,456</Text>
           <Text style={styles.Text}>4.7%</Text>
-          <Text style={styles.Text}>$990,909,099</Text>
+          <Text style={styles.Text}>$990</Text>
         </View>
 
         <View style={styles.table}>
           <Text style={styles.Text}>8</Text>
           <Text style={styles.Text}>
-            <MaterialCommunityIcons
+            {/* <MaterialCommunityIcons
               name="currency-btc"
               size={24}
               color="black"
-            />{" "}
-            BTC
+            />{" "} */}
+            FLUTTER
           </Text>
           <Text style={styles.Text}>$23,456</Text>
           <Text style={styles.Text}>4.7%</Text>
-          <Text style={styles.Text}>$990,909,099</Text>
+          <Text style={styles.Text}>$990</Text>
         </View>
 
         <View style={styles.table}>
           <Text style={styles.Text}>9</Text>
           <Text style={styles.Text}>
-            <MaterialCommunityIcons
+            {/* <MaterialCommunityIcons
               name="currency-btc"
               size={24}
               color="black"
-            />{" "}
-            BTC
+            />{" "} */}
+            REMITA
           </Text>
           <Text style={styles.Text}>$23,456</Text>
           <Text style={styles.Text}>4.7%</Text>
-          <Text style={styles.Text}>$990,909,099</Text>
+          <Text style={styles.Text}>$990</Text>
+        </View>
+
+        <View style={styles.table}>
+          <Text style={styles.Text}> 10</Text>
+          <Text style={styles.Text}>
+            {/* <MaterialCommunityIcons
+              name="currency-btc"
+              size={24}
+              color="black"
+            />{" "} */}
+            CARBON
+          </Text>
+          <Text style={styles.Text}>$23,456</Text>
+          <Text style={styles.Text}>4.7%</Text>
+          <Text style={styles.Text}>$990</Text>
         </View>
       </ScrollView>
-
-      <View style={styles.ads}>
-        <Image
-          source={require("./assets/superApp.png")}
-          style={{ width: 350, height: 50, marginHorizontal: 30 }}
-        />
-      </View>
 
       <View style={styles.footer}>
         <View style={styles.align}>
@@ -356,7 +363,7 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     width: "100%",
     justifyContent: "space-between",
-    height: "10%",
+    height: "15%",
     borderTopLeftRadius: 20,
     borderTopEndRadius: 20,
     alignItems: "center",
@@ -364,12 +371,11 @@ const styles = StyleSheet.create({
   },
   table: {
     flexDirection: "row",
-    width: "100%",
-    justifyContent: "space-between",
-    paddingHorizontal: 20,
+    paddingHorizontal: 10,
     borderBottomColor: "#333d29",
     borderWidth: 1,
     padding: 15,
+    justifyContent: "space-between",
   },
   align: {
     alignItems: "center",
