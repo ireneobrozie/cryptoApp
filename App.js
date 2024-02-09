@@ -43,12 +43,12 @@ export default function App() {
       </View>
 
       <View style={styles.scroll}>
-        <Text style={styles.Texts}>Cryptocurrency</Text>
+        <Text style={styles.Texts}>Fintechs Companies</Text>
         <Text style={styles.Text}>Categories</Text>
-        <Text style={styles.Text}>Exchanges</Text>
+        {/* <Text style={styles.Text}>Exchanges</Text> */}
       </View>
 
-      <View style={styles.Databody}>
+      {/* <View style={styles.Databody}>
         <View style={styles.Data}>
           <Text style={styles.Text}>GLOBAL MARKET CAP</Text>
           <Text style={styles.Text}>
@@ -72,12 +72,12 @@ export default function App() {
             </Text>
           </View>
         </View>
-      </View>
+      </View> */}
 
       <View style={styles.display}>
-        <View style={styles.displaycont}>
+        {/* <View style={styles.displaycont}>
           <Text style={styles.Text}>USD / BTC</Text>
-        </View>
+        </View> */}
 
         <View style={styles.displaycont}>
           <Text style={styles.Text}>All FINTECHS</Text>
@@ -98,7 +98,7 @@ export default function App() {
           <Text style={styles.Text}>FINTECHS</Text>
           <Text style={styles.Text}>PRICE</Text>
           <Text style={styles.Text}>24H</Text>
-          <Text style={styles.Text}>MARKET CAP</Text>
+          <Text style={styles.Text}> MARKET</Text>
         </View>
 
         <View style={styles.table}>
