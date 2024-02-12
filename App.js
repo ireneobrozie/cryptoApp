@@ -15,6 +15,7 @@ import { AntDesign } from "@expo/vector-icons";
 import { Octicons } from "@expo/vector-icons";
 import notifications from "./screens/notifications";
 import { LinearGradient } from "expo-linear-gradient";
+import Carousel from "./components/Carousel";
 
 export default function App() {
   return (
@@ -47,38 +48,8 @@ export default function App() {
         <Text style={styles.Text}>Categories</Text>
         {/* <Text style={styles.Text}>Exchanges</Text> */}
       </View>
-
-      {/* <View style={styles.Databody}>
-        <View style={styles.Data}>
-          <Text style={styles.Text}>GLOBAL MARKET CAP</Text>
-          <Text style={styles.Text}>
-            $1,713,020,289,116{" "}
-            <Text style={styles.Text}>
-              {" "}
-              <AntDesign name="caretdown" size={13} color="red" /> 5.1%
-            </Text>
-          </Text>
-        </View>
-
-        <View style={styles.Data}>
-          <View>
-            <Text style={styles.Text}>GLOBAL MARKET CAP</Text>
-            <Text style={styles.Text}>
-              $1,713,020,289,116{" "}
-              <Text style={styles.Text}>
-                {" "}
-                <AntDesign name="caretdown" size={13} color="red" /> 5.1%
-              </Text>
-            </Text>
-          </View>
-        </View>
-      </View> */}
-
+      <Carousel></Carousel>
       <View style={styles.display}>
-        {/* <View style={styles.displaycont}>
-          <Text style={styles.Text}>USD / BTC</Text>
-        </View> */}
-
         <View style={styles.displaycont}>
           <Text style={styles.Text}>All FINTECHS</Text>
         </View>
